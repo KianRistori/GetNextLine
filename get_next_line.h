@@ -6,7 +6,7 @@
 /*   By: kristori <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 15:51:47 by kristori          #+#    #+#             */
-/*   Updated: 2022/10/20 12:15:11 by kristori         ###   ########.fr       */
+/*   Updated: 2022/10/25 11:53:20 by kristori         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,12 @@
 #  define BUFFER_SIZE 10
 # endif
 
-char	*get_next_line(int fd);
 size_t	ft_strlen(char *str);
 char	*ft_strjoin(char *s1, char *s2);
 char	*ft_strchr(char *s, int c);
+char	*get_next_line(int fd);
+char	*ft_get_line(char *save);
+char	*ft_save(char *save);
+char	*ft_read_and_save(int fd, char *save);
 
 #endif
